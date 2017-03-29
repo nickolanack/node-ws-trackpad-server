@@ -1,0 +1,32 @@
+{
+  "name": "node-ws-trackpad-server",
+  "version": "1.0.0",
+  "description": "Websocket trackpad server for controlling mouse events from some websocket client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickolanack/node-ws-trackpad-server.git"
+  },
+  "keywords": [
+    "websocket",
+    "trackpad",
+    "network-mouse",
+    "touchmouse",
+    "mobile",
+    "ios",
+    "android"
+  ],
+  "author": "nickblackwell82@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickolanack/node-ws-trackpad-server/issues"
+  },
+  "homepage": "https://github.com/nickolanack/node-ws-trackpad-server#readme",
+  "dependencies": {
+    "robotjs": "^0.4.7",
+    "ws": "^2.2.2"
+  }
+}
