@@ -20,7 +20,7 @@ wss.on('connection', function connection(ws) {
 	console.log('connection');
 	mouse = robot.getMousePos();
 	ws.on('message', function incoming(message) {
-		console.log('received: %s', message);
+		//console.log('received: %s', message);
 
 
 
@@ -40,6 +40,15 @@ wss.on('connection', function connection(ws) {
 
 			if(gesture.event==='click'){
 				robot.mouseClick();
+			}
+
+			if(gesture.event==='key'){
+				try{
+				robot.keyTap(gesture.key);
+				}catch(e){
+					console.log(e);
+					console.log(gesture.key);
+				}
 			}
 
 		}
